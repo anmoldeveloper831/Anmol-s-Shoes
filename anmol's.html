@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anmol's Shoes</title>
+    <style>
+        body { font-family: 'Helvetica Neue', Arial, sans-serif; margin: 0; padding: 0; background-color: #fff; color: #333; }
+        header { position: absolute; top: 0; width: 100%; background-color: rgba(255, 255, 255, 0.9); z-index: 1000; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        nav { display: flex; justify-content: space-between; align-items: center; padding: 1rem 2rem; }
+        nav .logo { font-size: 1.5rem; font-weight: bold; }
+        nav ul { list-style: none; display: flex; margin: 0; padding: 0; }
+        nav ul li { margin: 0 1rem; }
+        nav ul li a { text-decoration: none; color: #333; font-weight: 500; }
+        .hero { background-image: url('https://static.vecteezy.com/system/resources/thumbnails/036/725/331/small/ai-generated-shoes-store-advertisment-background-with-copy-space-free-photo.jpg'); background-size: cover; background-position: center; height: 60vh; display: flex; align-items: center; justify-content: center; color: white; text-align: center; }
+        .hero h1 { font-size: 3rem; margin: 0; color: black; }
+        .hero p { font-size: 1.2rem; margin: 0.5rem 0; color: black; }
+        .hero button { background-color: #000; color: white; border: none; padding: 1rem 2rem; font-size: 1rem; cursor: pointer; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 2rem; }
+        .products { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; }
+        .product { background: #f9f9f9; padding: 1rem; text-align: center; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+        .product img { width: 100%; height: 200px; object-fit: cover; border-radius: 8px; }
+        .product h3 { margin: 1rem 0 0.5rem; }
+        .product p { margin: 0.5rem 0; }
+        .product button { background-color: #000; color: white; border: none; padding: 0.5rem 1rem; cursor: pointer; border-radius: 4px; }
+        .slideshow { position: relative; max-width: 1200px; margin: 2rem auto; overflow: hidden; }
+        .slides { display: flex; transition: transform 0.5s ease; }
+        .slide { min-width: 100%; text-align: center; }
+        .slide img { width: 100%; height: 300px; object-fit: cover; }
+        .slide h3 { margin: 1rem 0; }
+        .prev, .next { position: absolute; top: 50%; transform: translateY(-50%); background-color: rgba(0,0,0,0.5); color: white; border: none; padding: 1rem; cursor: pointer; font-size: 1.5rem; }
+        .prev { left: 0; }
+        .next { right: 0; }
+        footer { background-color: #000; color: white; padding: 2rem; text-align: center; }
+        footer .links { display: flex; justify-content: center; margin-bottom: 1rem; }
+        footer .links a { color: white; margin: 0 1rem; text-decoration: none; }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Anmol's Shoes</div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#men">Men</a></li>
+                <li><a href="#women">Women</a></li>
+                <li><a href="#kids">Kids</a></li>
+                <li><a href="#sale">Sale</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="hero" id="home">
+        <div>
+            <h1>Step Into Style</h1>
+            <p>Discover the latest collection of shoes at Anmol's.</p>
+            <button>Shop Now</button>
+        </div>
+    </section>
+    <div class="container">
+        <h2>Featured Products</h2>
+        <div class="products">
+            <div class="product">
+                <img src="https://images.unsplash.com/photo-1549298916-b41d501d3772?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200&q=80" alt="Air Jordan">
+                <h3>Air Jordan</h3>
+                <p>$150</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200&q=80" alt="Running Shoes">
+                <h3>Running Shoes</h3>
+                <p>$120</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="https://images.unsplash.com/photo-1551107696-a4b0c5a0d9a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200&q=80" alt="High Heels">
+                <h3>High Heels</h3>
+                <p>$90</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200&q=80" alt="Casual Sandals">
+                <h3>Casual Sandals</h3>
+                <p>$40</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+    </div>
+    <div class="slideshow">
+        <div class="slides">
+            <div class="slide">
+                <img src="https://images.unsplash.com/photo-1549298916-b41d501d3772?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=300&q=80" alt="Air Jordan">
+                <h3>Air Jordan - Iconic Basketball Shoes</h3>
+            </div>
+            <div class="slide">
+                <img src="https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=300&q=80" alt="Running Shoes">
+                <h3>Running Shoes - Perfect for Jogging</h3>
+            </div>
+            <div class="slide">
+                <img src="https://images.unsplash.com/photo-1551107696-a4b0c5a0d9a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=300&q=80" alt="High Heels">
+                <h3>High Heels - Elegant and Stylish</h3>
+            </div>
+            <div class="slide">
+                <img src="https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=300&q=80" alt="Casual Sandals">
+                <h3>Casual Sandals - Comfort for Everyday</h3>
+            </div>
+            <div class="slide">
+                <img src="https://images.unsplash.com/photo-1608231387042-66d1773070a5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=300&q=80" alt="Boots">
+                <h3>Leather Boots - Durable and Rugged</h3>
+            </div>
+            <div class="slide">
+                <img src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=300&q=80" alt="Sneakers">
+                <h3>Classic Sneakers - Versatile and Comfortable</h3>
+            </div>
+            <div class="slide">
+                <img src="https://images.unsplash.com/photo-1544966503-7cc5ac882d5f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=300&q=80" alt="Loafers">
+                <h3>Loafers - Smart Casual Wear</h3>
+            </div>
+            <div class="slide">
+                <img src="https://images.unsplash.com/photo-1607522370275-f14206abe5d3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=300&q=80" alt="Flip Flops">
+                <h3>Flip Flops - Beach and Summer Fun</h3>
+            </div>
+        </div>
+        <button class="prev">&#10094;</button>
+        <button class="next">&#10095;</button>
+    </div>
+    <footer>
+        <div class="links">
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+            <a href="#privacy">Privacy Policy</a>
+            <a href="#terms">Terms of Service</a>
+        </div>
+        <p>&copy; 2023 Anmol's Shoes. All rights reserved.</p>
+    </footer>
+    <script>
+        let slideIndex = 0;
+        const slides = document.querySelector('.slides');
+        const totalSlides = document.querySelectorAll('.slide').length;
+
+        function showSlide(index) {
+            if (index >= totalSlides) slideIndex = 0;
+            if (index < 0) slideIndex = totalSlides - 1;
+            slides.style.transform = `translateX(-${slideIndex * 100}%)`;
+        }
+
+        document.querySelector('.next').addEventListener('click', () => {
+            slideIndex++;
+            showSlide(slideIndex);
+        });
+
+        document.querySelector('.prev').addEventListener('click', () => {
+            slideIndex--;
+            showSlide(slideIndex);
+        });
+
+        // Auto-slide every 3 seconds
+        setInterval(() => {
+            slideIndex++;
+            showSlide(slideIndex);
+        }, 3000);
+    </script>
+</body>
+</html>
